@@ -31,7 +31,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="py-8  border-white/10">
+    <footer className="py-8 border-t border-white/10 bg-black/50 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-400 text-sm flex items-center gap-1">

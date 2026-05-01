@@ -65,6 +65,75 @@ export const aboutData = {
   ],
 }
 
+export const educationData = {
+  title: 'Education',
+  education: [
+    {
+      degree: 'Bachelor of Science in Computer Science',
+      school: 'University of Technology',
+      location: 'San Francisco, CA',
+      period: '2018 - 2022',
+      gpa: '3.8/4.0',
+      achievements: [
+        'Dean\'s List for 6 semesters',
+        'President of Computer Science Club',
+        'Published research paper on Machine Learning'
+      ]
+    },
+    {
+      degree: 'Full Stack Web Development Bootcamp',
+      school: 'Tech Academy',
+      location: 'Online',
+      period: '2022',
+      achievements: [
+        'Completed intensive 24-week program',
+        'Built 5 full-stack applications',
+        'Specialized in React and Node.js'
+      ]
+    }
+  ],
+  certifications: [
+    {
+      name: 'AWS Certified Solutions Architect',
+      issuer: 'Amazon Web Services',
+      date: '2023',
+      credentialId: 'AWS-ASA-123456'
+    },
+    {
+      name: 'Google Cloud Professional Developer',
+      issuer: 'Google Cloud',
+      date: '2023',
+      credentialId: 'GCP-PD-789012'
+    },
+    {
+      name: 'Meta React Developer Certificate',
+      issuer: 'Meta',
+      date: '2022',
+      credentialId: 'META-RD-345678'
+    }
+  ]
+}
+
+export const navbarData = {
+  logo: {
+    text: 'DJ',
+    fullText: 'David Jones'
+  },
+  navigation: [
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Education', href: '#education' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'GitHub', href: '#github' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Skills', href: '#skills' }
+  ],
+  ctaButton: {
+    text: "Let's Talk",
+    href: '#contact'
+  }
+}
+
 export const experienceData = [
   {
     title: 'Senior Software Developer',

@@ -32,17 +32,24 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <div className="glass-effect rounded-2xl overflow-hidden hover:bg-white/5 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-500/20 group/card">
-                <div className="h-48 overflow-hidden">
-                  <ImageWithFallback 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110"
-                    fallbackCategory="portfolio"
-                    fallbackIndex={index}
-                  />
+              <div className="glass-effect rounded-2xl overflow-hidden hover:bg-white/5 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-500/30 group/card relative overflow-hidden">
+                {/* Lighting effect overlay */}
+                <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
+                  <div className="absolute top-0 left-0 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 group-hover/card:translate-x-0 group-hover/card:translate-y-0 transition-transform duration-700"></div>
+                  <div className="absolute bottom-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 group-hover/card:translate-x-0 group-hover/card:translate-y-0 transition-transform duration-700"></div>
                 </div>
-                <div className="p-4 sm:p-6">
+                <div className="relative z-10">
+                  <div className="h-48 overflow-hidden">
+                    <ImageWithFallback 
+                      src={project.image} 
+                      alt={project.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110"
+                      fallbackCategory="portfolio"
+                      fallbackIndex={index}
+                    />
+                  </div>
+                  <div className="p-4 sm:p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <span className="px-2 py-1 text-xs bg-cyan-500/20 text-cyan-400 rounded-full">
                       Featured
@@ -90,6 +97,7 @@ export default function Projects() {
                     </a>
                   </div>
                 </div>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -105,8 +113,15 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <div className="glass-effect p-4 sm:p-6 rounded-2xl hover:bg-white/5 transition-all duration-500 hover:scale-[1.03] hover:shadow-xl hover:shadow-cyan-500/10 h-full flex flex-col group/card">
-                <div className="h-32 rounded-xl overflow-hidden mb-4">
+              <div className="glass-effect p-4 sm:p-6 rounded-2xl hover:bg-white/5 transition-all duration-500 hover:scale-[1.03] hover:shadow-xl hover:shadow-cyan-500/20 h-full flex flex-col group/card relative overflow-hidden">
+                {/* Lighting effect overlay */}
+                <div className="absolute inset-0 opacity-0 group-hover/card:opacity-100 transition-opacity duration-500">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
+                  <div className="absolute top-0 left-0 w-24 h-24 bg-cyan-500/20 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2 group-hover/card:translate-x-0 group-hover/card:translate-y-0 transition-transform duration-700"></div>
+                  <div className="absolute bottom-0 right-0 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl translate-x-1/2 translate-y-1/2 group-hover/card:translate-x-0 group-hover/card:translate-y-0 transition-transform duration-700"></div>
+                </div>
+                <div className="relative z-10">
+                  <div className="h-32 rounded-xl overflow-hidden mb-4">
                   <ImageWithFallback 
                     src={project.image} 
                     alt={project.title} 
@@ -155,6 +170,7 @@ export default function Projects() {
                     <Github size={14} />
                     Code
                   </a>
+                </div>
                 </div>
               </div>
             </motion.div>
