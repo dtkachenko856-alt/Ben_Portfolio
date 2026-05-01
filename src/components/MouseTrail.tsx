@@ -1,12 +1,6 @@
-import { useEffect, useState, useCallback, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useEffect, useState, useCallback} from 'react'
+import { motion } from 'framer-motion'
 
-interface TrailPoint {
-  id: number
-  x: number
-  y: number
-  timestamp: number
-}
 
 export default function MouseTrail() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })

@@ -58,7 +58,6 @@ export default function StarBackground() {
       {[...Array(5)].map((_, i) => {
         const randomX = 10 + Math.random() * 80;
         const randomDelay = Math.random() * 3;
-        const randomDuration = 6 + Math.random() * 4;
         
         return (
           <motion.div
