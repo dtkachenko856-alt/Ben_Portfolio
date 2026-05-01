@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import {  Download, Terminal, Zap } from 'lucide-react'
+import { Mail, Download, Terminal, Zap } from 'lucide-react'
 import { heroData } from '../data/mockData'
 
 export default function Hero() {
@@ -140,8 +140,8 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* CTA Button */}
-          <div className="flex justify-center mt-8">
+          {/* CTA Buttons */}
+          <div className="flex justify-center gap-4 mt-8">
             <motion.a
               href={heroData.resumeUrl}
               download
@@ -156,6 +156,19 @@ export default function Hero() {
             >
               <Download size={16} />
               <span className="text-sm font-medium">Download CV</span>
+            </motion.a>
+            
+            <motion.a
+              href="mailto:davidjones@gmail.com"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-cyan-500/20 to-cyan-600/20 border border-cyan-500/40 rounded-full text-cyan-300 hover:from-cyan-500/30 hover:to-cyan-600/30 hover:border-cyan-500/60 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
+            >
+              <Mail size={16} />
+              <span className="text-sm font-medium">Send Mail</span>
             </motion.a>
           </div>
         </div>
