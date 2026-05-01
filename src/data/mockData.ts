@@ -21,7 +21,7 @@ export const heroData = {
   tagline: 'Software Developer & Creative Problem Solver',
   description: 'I specialize in building exceptional digital experiences with React, Node.js, TypeScript, and modern web technologies. Let\'s bring your ideas to life.',
   availability: 'Available for freelance work',
-  avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+  avatar: 'https://images.unsplash.com/photo-1557862921-37829c790f19?w=400&h=400&fit=crop&crop=face',
   resumeUrl: 'https://example.com/yassine-resume.pdf',
   badges: [
     { icon: 'Code2', label: 'Full Stack' },
@@ -31,7 +31,7 @@ export const heroData = {
 
 export const aboutData = {
   title: 'David Jones',
-  avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face',
+  avatar: 'https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&h=700&fit=crop&crop=full',
   description: [
     'I\'m David Jones, a software developer based in United State with a passion for building digital products that make a difference. With expertise spanning frontend, backend, mobile, and game development, I bring a versatile skill set to every project.',
     'My journey in software development started with a curiosity for how things work, which evolved into a career creating solutions that help businesses grow and users thrive.',

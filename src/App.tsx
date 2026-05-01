@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import SocialSidebar from './components/SocialSidebar'
-import MouseTrail from './components/MouseTrail'
 import StarBackground from './components/StarBackground'
 import About from './components/About'
 import Experience from './components/Experience'
@@ -30,9 +29,8 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-dark-900 cursor-none">
+    <div className="min-h-screen bg-dark-900">
       <StarBackground />
-      <MouseTrail />
       <Navbar />
       <SocialSidebar />
       <main>

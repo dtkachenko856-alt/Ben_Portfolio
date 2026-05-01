@@ -56,7 +56,7 @@ export default function About() {
             whileHover={{ scale: 1.02 }}
             className="relative group"
           >
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-cyan-500/20 to-cyan-600/20 p-1 group-hover:from-cyan-500/30 group-hover:to-cyan-600/30 transition-all">
+            <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-cyan-500/20 to-cyan-600/20 p-1 group-hover:from-cyan-500/30 group-hover:to-cyan-600/30 transition-all">
               <div className="w-full h-full rounded-2xl overflow-hidden">
                 <img
                   src={aboutData.avatar}
