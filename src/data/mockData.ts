@@ -375,7 +375,7 @@ export const chatbotData = {
     'contact': `You can reach David via email at ${contactData.email} or through the contact form on this page. 📧`,
     'email': `David's email is ${contactData.email}. Feel free to reach out! 📧`,
     'hire': 'David is available for freelance work and full-time opportunities. Contact him to discuss your project! 💼',
-    'resume': 'You can download David\'s resume from the Download CV button in the hero section! 📄',
+    'resume': 'You can download David\'s resume from the Download Resume button in the hero section! 📄',
     'about': `David is a Software Developer based in ${contactData.location}, passionate about building digital products that make a difference. 🌍`,
     'github': `You can check out David's GitHub profile at https://github.com/${githubUsername} for his latest projects and contributions! 🐙`,
     'linkedin': `Connect with David on LinkedIn: https://linkedin.com/in/yassine-dev for professional networking! 💼`,

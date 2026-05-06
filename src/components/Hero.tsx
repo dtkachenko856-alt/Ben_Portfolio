@@ -155,7 +155,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 hover:bg-cyan-500/20 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
             >
               <Download size={16} />
-              <span className="text-sm font-medium">Download CV</span>
+              <span className="text-sm font-medium">Download Resume</span>
             </motion.a>
             
             <motion.a
