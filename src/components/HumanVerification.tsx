@@ -17,7 +17,6 @@ export default function HumanVerification() {
 
   const correctImages = currentVerification.correctImageIndices
 
-  // Validate images when verification set changes
   useEffect(() => {
     if (currentVerification.images.length === 0) return
     
