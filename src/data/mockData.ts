@@ -12,7 +12,7 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/yassine-dev', icon: 'Github' },
+  { name: 'GitHub', href: `https://github.com/${githubUsername}`, icon: 'Github' },
   { name: 'LinkedIn', href: 'https://linkedin.com/in/yassine-dev', icon: 'Linkedin' },
 ]
 
@@ -21,7 +21,7 @@ export const heroData = {
   tagline: 'Software Developer & Creative Problem Solver',
   description: 'I specialize in building exceptional digital experiences with React, Node.js, TypeScript, and modern web technologies. Let\'s bring your ideas to life.',
   availability: 'Available for freelance work',
-  avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+  avatar: '/images/avatar/about-avatar.jpg',
   resumeUrl: 'https://example.com/yassine-resume.pdf',
   badges: [
     { icon: 'Code2', label: 'Full Stack' },
@@ -31,7 +31,7 @@ export const heroData = {
 
 export const aboutData = {
   title: 'David Jones',
-  avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop&crop=face',
+  avatar: '/images/avatar/about-avatar.jpg',
   description: [
     'I\'m David Jones, a software developer based in United State with a passion for building digital products that make a difference. With expertise spanning frontend, backend, mobile, and game development, I bring a versatile skill set to every project.',
     'My journey in software development started with a curiosity for how things work, which evolved into a career creating solutions that help businesses grow and users thrive.',
@@ -63,6 +63,75 @@ export const aboutData = {
       description: 'Robust APIs and database solutions with PostgreSQL, MongoDB, and GraphQL.',
     },
   ],
+}
+
+export const educationData = {
+  title: 'Education',
+  education: [
+    {
+      degree: 'Bachelor of Science in Computer Science',
+      school: 'University of Technology',
+      location: 'San Francisco, CA',
+      period: '2018 - 2022',
+      gpa: '3.8/4.0',
+      achievements: [
+        'Dean\'s List for 6 semesters',
+        'President of Computer Science Club',
+        'Published research paper on Machine Learning'
+      ]
+    },
+    {
+      degree: 'Full Stack Web Development Bootcamp',
+      school: 'Tech Academy',
+      location: 'Online',
+      period: '2022',
+      achievements: [
+        'Completed intensive 24-week program',
+        'Built 5 full-stack applications',
+        'Specialized in React and Node.js'
+      ]
+    }
+  ],
+  certifications: [
+    {
+      name: 'AWS Certified Solutions Architect',
+      issuer: 'Amazon Web Services',
+      date: '2023',
+      credentialId: 'AWS-ASA-123456'
+    },
+    {
+      name: 'Google Cloud Professional Developer',
+      issuer: 'Google Cloud',
+      date: '2023',
+      credentialId: 'GCP-PD-789012'
+    },
+    {
+      name: 'Meta React Developer Certificate',
+      issuer: 'Meta',
+      date: '2022',
+      credentialId: 'META-RD-345678'
+    }
+  ]
+}
+
+export const navbarData = {
+  logo: {
+    text: 'DJ',
+    fullText: 'David Jones'
+  },
+  navigation: [
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Education', href: '#education' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'GitHub', href: '#github' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Skills', href: '#skills' }
+  ],
+  ctaButton: {
+    text: "Let's Talk",
+    href: '#contact'
+  }
 }
 
 export const experienceData = [
@@ -116,7 +185,7 @@ export const projectsData = [
   {
     title: 'Shopify E-Commerce Store',
     description: 'Full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=shop1',
     tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
     demoUrl: 'https://shopify-demo.vercel.app',
     githubUrl: 'https://github.com/yassine-dev/shopify-store',
@@ -125,7 +194,7 @@ export const projectsData = [
   {
     title: 'Fashion Online Store',
     description: 'Modern fashion e-commerce platform with product filtering, cart management, and checkout.',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=fashion1',
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe'],
     demoUrl: '',
     githubUrl: 'https://github.com/yassine-dev/fashion-store',
@@ -134,7 +203,7 @@ export const projectsData = [
   {
     title: 'Electronics Marketplace',
     description: 'Multi-vendor electronics store with product comparisons and reviews system.',
-    image: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=electronics1',
     tags: ['React', 'GraphQL', 'MongoDB', 'Redis'],
     demoUrl: '#',
     githubUrl: '#',
@@ -143,7 +212,7 @@ export const projectsData = [
   {
     title: 'Organic Food Store',
     description: 'Fresh produce delivery platform with subscription boxes and local vendor integration.',
-    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=organic1',
     tags: ['React', 'Node.js', 'MongoDB', 'AWS'],
     demoUrl: '#',
     githubUrl: '#',
@@ -152,7 +221,7 @@ export const projectsData = [
   {
     title: 'Jewelry Boutique',
     description: 'Luxury jewelry e-commerce with 360° product view and custom engraving options.',
-    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=jewelry1',
     tags: ['React', 'Three.js', 'Node.js', 'WebGL'],
     demoUrl: '#',
     githubUrl: '#',
@@ -161,7 +230,7 @@ export const projectsData = [
   {
     title: 'Home Decor Store',
     description: 'Interior design marketplace with AR room preview and style recommendations.',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=homedecor1',
     tags: ['React', 'AR.js', 'Python', 'FastAPI'],
     demoUrl: '#',
     githubUrl: '#',
@@ -170,7 +239,7 @@ export const projectsData = [
   {
     title: 'Sports Equipment Shop',
     description: 'Athletic gear e-commerce with size guides, inventory tracking, and team discounts.',
-    image: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=sports1',
     tags: ['React', 'Node.js', 'MySQL', 'Redis'],
     demoUrl: '#',
     githubUrl: '#',
@@ -179,7 +248,7 @@ export const projectsData = [
   {
     title: 'Book Store Platform',
     description: 'Online bookstore with reading lists, reviews, and personalized recommendations.',
-    image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=books1',
     tags: ['Next.js', 'Prisma', 'PostgreSQL', 'AI'],
     demoUrl: '#',
     githubUrl: '#',
@@ -188,7 +257,7 @@ export const projectsData = [
   {
     title: 'Pet Supplies Store',
     description: 'Pet products marketplace with auto-replenishment and veterinary partnerships.',
-    image: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=pets1',
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     demoUrl: '#',
     githubUrl: '#',
@@ -197,7 +266,7 @@ export const projectsData = [
   {
     title: 'Cosmetics Boutique',
     description: 'Beauty products store with virtual try-on and skin type recommendations.',
-    image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&h=600&fit=crop',
+    image: 'https://picsum.photos/800/600?random=cosmetics1',
     tags: ['React', 'WebRTC', 'Python', 'ML'],
     demoUrl: '#',
     githubUrl: '#',
@@ -291,4 +360,128 @@ export const contactData = {
 export const footerData = {
   name: 'David Jones',
   year: new Date().getFullYear(),
+}
+
+export const chatbotData = {
+  welcomeMessage: "👋 Hi! I'm David's AI assistant. Ask me anything about his work, skills, or how to get in touch!",
+  botName: "David's Assistant",
+  botResponses: {
+    'hello': 'Hi there! 👋 Welcome to my portfolio. How can I help you today?',
+    'hi': 'Hello! 👋 I\'m David\'s virtual assistant. Ask me about his skills, projects, or experience!',
+    'hey': 'Hey! 👋 What would you like to know about David?',
+    'skills': `David is skilled in React, TypeScript, Node.js, Next.js, Tailwind CSS, and more. Check out the Skills section for details! 💻`,
+    'experience': `David has 5+ years of experience as a Software Developer, working with startups and international clients. 🚀`,
+    'projects': `David has built many projects including E-commerce stores, Mobile apps, and Web applications. Check the Projects section! 🛠️`,
+    'contact': `You can reach David via email at ${contactData.email} or through the contact form on this page. 📧`,
+    'email': `David's email is ${contactData.email}. Feel free to reach out! 📧`,
+    'hire': 'David is available for freelance work and full-time opportunities. Contact him to discuss your project! 💼',
+    'resume': 'You can download David\'s resume from the Download CV button in the hero section! 📄',
+    'about': `David is a Software Developer based in ${contactData.location}, passionate about building digital products that make a difference. 🌍`,
+    'github': `You can check out David's GitHub profile at https://github.com/${githubUsername} for his latest projects and contributions! 🐙`,
+    'linkedin': `Connect with David on LinkedIn: https://linkedin.com/in/yassine-dev for professional networking! 💼`,
+    'location': `David is based in ${contactData.location} and available for remote work worldwide! 🌍`,
+    'availability': heroData.availability,
+    'default': 'I\'m not sure about that. Try asking about skills, experience, projects, or how to contact David! 🤔',
+  },
+  quickReplies: [
+    'Tell me about your skills',
+    'View your projects', 
+    'How to contact you?',
+    'Are you available for hire?',
+  ],
+}
+
+export const verificationData = {
+  // Multiple verification sets for daily rotation
+  verificationSets: [
+    {
+      instruction: "Select all 4 images containing a computer to verify you're human",
+      correctImageIndices: [0, 2, 4, 7],
+      images: [
+        { url: "/images/verification/computer1.jpg", alt: "Laptop computer" },
+        { url: "/images/verification/store.jpg", alt: "Store interior" },
+        { url: "/images/verification/computer2.jpg", alt: "Desktop computer" },
+        { url: "/images/verification/shoes.jpg", alt: "Forest trees" },
+        { url: "/images/verification/computer3.jpg", alt: "Computer setup" },
+        { url: "/images/verification/street.jpg", alt: "City street" },
+        { url: "/images/verification/coffee.jpg", alt: "Ocean beach" },
+        { url: "/images/verification/computer4.jpg", alt: "Coding on computer" },
+        { url: "/images/verification/office.jpg", alt: "Office space" },
+      ],
+    },
+    {
+      instruction: "Select all 4 images containing a car to verify you're human",
+      correctImageIndices: [1, 3, 5, 8],
+      images: [
+        { url: "/images/verification/store.jpg", alt: "Store interior" },
+        { url: "/images/verification/car1.jpg", alt: "Sports car" },
+        { url: "/images/verification/tree1.jpg", alt: "Forest trees" },
+        { url: "/images/verification/car2.jpg", alt: "Vintage car" },
+        { url: "/images/verification/beach1.jpg", alt: "Ocean beach" },
+        { url: "/images/verification/car3.jpg", alt: "Luxury car" },
+        { url: "/images/verification/building1.jpg", alt: "Modern building" },
+        { url: "/images/verification/shoes.jpg", alt: "Fashion shoes" },
+        { url: "/images/verification/car4.jpg", alt: "Classic car" },
+      ],
+    },
+    {
+      instruction: "Select all 4 images containing a tree to verify you're human",
+      correctImageIndices: [0, 4, 6, 7],
+      images: [
+        { url: "/images/verification/tree1.jpg", alt: "Forest trees" },
+        { url: "/images/verification/car1.jpg", alt: "Sports car" },
+        { url: "/images/verification/computer2.jpg", alt: "Desktop computer" },
+        { url: "/images/verification/car2.jpg", alt: "Vintage car" },
+        { url: "/images/verification/tree2.jpg", alt: "Palm tree" },
+        { url: "/images/verification/car3.jpg", alt: "Luxury car" },
+        { url: "/images/verification/tree3.jpg", alt: "Oak tree" },
+        { url: "/images/verification/tree4.jpg", alt: "Pine trees" },
+        { url: "/images/verification/car4.jpg", alt: "Classic car" },
+      ],
+    },
+    {
+      instruction: "Select all 4 images containing a beach to verify you're human",
+      correctImageIndices: [2, 5, 7, 8],
+      images: [
+        { url: "/images/verification/tree1.jpg", alt: "Forest trees" },
+        { url: "/images/verification/car1.jpg", alt: "Sports car" },
+        { url: "/images/verification/beach1.jpg", alt: "Ocean beach" },
+        { url: "/images/verification/car2.jpg", alt: "Vintage car" },
+        { url: "/images/verification/tree2.jpg", alt: "Palm tree" },
+        { url: "/images/verification/beach2.jpg", alt: "Tropical beach" },
+        { url: "/images/verification/tree3.jpg", alt: "Oak tree" },
+        { url: "/images/verification/beach3.jpg", alt: "Sandy beach" },
+        { url: "/images/verification/beach4.jpg", alt: "Beach sunset" },
+      ],
+    },
+    {
+      instruction: "Select all 4 images containing a building to verify you're human",
+      correctImageIndices: [1, 3, 5, 6],
+      images: [
+        { url: "/images/verification/tree1.jpg", alt: "Forest trees" },
+        { url: "/images/verification/building1.jpg", alt: "Modern building" },
+        { url: "/images/verification/beach1.jpg", alt: "Ocean beach" },
+        { url: "/images/verification/building2.jpg", alt: "Office building" },
+        { url: "/images/verification/tree2.jpg", alt: "Palm tree" },
+        { url: "/images/verification/building3.jpg", alt: "Skyscraper" },
+        { url: "/images/verification/building4.jpg", alt: "Historic building" },
+        { url: "/images/verification/beach3.jpg", alt: "Sandy beach" },
+        { url: "/images/verification/beach4.jpg", alt: "Beach sunset" },
+      ],
+    },
+  ],
+  
+  // Function to get today's verification set
+  getDailyVerification: function() {
+    const today = new Date()
+    const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000)
+    const setIndex = dayOfYear % this.verificationSets.length
+    return this.verificationSets[setIndex]
+  },
+  
+  // Function to get verification key for today (for validation)
+  getDailyKey: function() {
+    const today = new Date()
+    return today.toISOString().split('T')[0] // YYYY-MM-DD format
+  },
 }

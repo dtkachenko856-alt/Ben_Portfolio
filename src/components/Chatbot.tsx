@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MessageCircle, X, Send, Bot, Sparkles } from 'lucide-react'
+import { chatbotData } from '../data/mockData'
 
 interface Message {
   id: string
@@ -9,34 +10,13 @@ interface Message {
   timestamp: Date
 }
 
-const botResponses: Record<string, string> = {
-  'hello': 'Hi there! 👋 Welcome to my portfolio. How can I help you today?',
-  'hi': 'Hello! 👋 I\'m Yassine\'s virtual assistant. Ask me about his skills, projects, or experience!',
-  'hey': 'Hey! 👋 What would you like to know about Yassine?',
-  'skills': 'Yassine is skilled in React, TypeScript, Node.js, Next.js, Tailwind CSS, and more. Check out the Skills section for details! 💻',
-  'experience': 'Yassine has 5+ years of experience as a Software Developer, working with startups and international clients. 🚀',
-  'projects': 'Yassine has built many projects including E-commerce stores, Mobile apps, and Web applications. Check the Projects section! 🛠️',
-  'contact': 'You can reach Yassine via email at yassine@example.com or through the contact form on this page. 📧',
-  'email': 'Yassine\'s email is yassine@example.com. Feel free to reach out! 📧',
-  'hire': 'Yassine is available for freelance work and full-time opportunities. Contact him to discuss your project! 💼',
-  'resume': 'You can download Yassine\'s resume from the Resume button in the hero section! 📄',
-  'about': 'Yassine is a Software Developer based in Morocco, passionate about building digital products that make a difference. 🌍',
-  'default': 'I\'m not sure about that. Try asking about skills, experience, projects, or how to contact Yassine! 🤔',
-}
-
-const quickReplies = [
-  'Tell me about your skills',
-  'View your projects',
-  'How to contact you?',
-  'Are you available for hire?',
-]
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 'welcome',
-      text: '👋 Hi! I\'m Yassine\'s AI assistant. Ask me anything about his work, skills, or how to get in touch!',
+      text: chatbotData.welcomeMessage,
       sender: 'bot',
       timestamp: new Date(),
     },
@@ -63,13 +43,13 @@ export default function Chatbot() {
   const getBotResponse = (userMessage: string): string => {
     const lowerMsg = userMessage.toLowerCase()
     
-    for (const [keyword, response] of Object.entries(botResponses)) {
+    for (const [keyword, response] of Object.entries(chatbotData.botResponses)) {
       if (lowerMsg.includes(keyword)) {
         return response
       }
     }
     
-    return botResponses.default
+    return chatbotData.botResponses.default
   }
 
   const handleSend = () => {
@@ -150,7 +130,7 @@ export default function Chatbot() {
                   <Bot size={18} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold text-sm">Yassine's Assistant</h3>
+                  <h3 className="text-white font-semibold text-sm">{chatbotData.botName}</h3>
                   <p className="text-white/70 text-xs flex items-center gap-1">
                     <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
                     Online
@@ -213,7 +193,7 @@ export default function Chatbot() {
             {/* Quick Replies */}
             <div className="px-3 py-2 bg-dark-900/30  border-white/5">
               <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
-                {quickReplies.map((reply) => (
+                {chatbotData.quickReplies.map((reply) => (
                   <button
                     key={reply}
                     onClick={() => handleQuickReply(reply)}

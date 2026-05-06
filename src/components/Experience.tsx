@@ -33,7 +33,14 @@ export default function Experience() {
                 <div className="absolute left-0 top-3 w-4 h-4 rounded-full bg-cyan-500 border-2 border-slate-900" />
 
                 {/* Card */}
-                <div className="glass-effect rounded-2xl p-6 hover:bg-white/5 transition-all duration-300 group">
+                <div className="glass-effect rounded-2xl p-6 hover:bg-white/5 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-500/20 relative overflow-hidden group/exp">
+                  {/* Lighting effect overlay */}
+                  <div className="absolute inset-0 opacity-0 group-hover/exp:opacity-100 transition-opacity duration-500">
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10"></div>
+                    <div className="absolute top-0 left-0 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 group-hover/exp:translate-x-0 group-hover/exp:translate-y-0 transition-transform duration-700"></div>
+                    <div className="absolute bottom-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2 group-hover/exp:translate-x-0 group-hover/exp:translate-y-0 transition-transform duration-700"></div>
+                  </div>
+                  <div className="relative z-10">
                   {/* Header */}
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
                     <div>
@@ -67,6 +74,7 @@ export default function Experience() {
                         {skill}
                       </span>
                     ))}
+                  </div>
                   </div>
                 </div>
               </motion.div>

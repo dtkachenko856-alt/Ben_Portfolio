@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, MessageCircle } from 'lucide-react'
-import { navLinks } from '../data/mockData'
+import { navbarData } from '../data/mockData'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,11 +29,11 @@ export default function Navbar() {
             className="text-lg md:text-xl font-bold text-cyan-400"
             whileHover={{ scale: 1.05 }}
           >
-            YASSINE
+            DJ
           </motion.a>
 
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
+            {navbarData.navigation.map((link) => (
               <motion.a
                 key={link.name}
                 href={link.href}
@@ -76,7 +76,7 @@ export default function Navbar() {
             className="md:hidden glass-effect"
           >
             <div className="px-4 py-4 space-y-4">
-              {navLinks.map((link) => (
+              {navbarData.navigation.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}

@@ -1,0 +1,17 @@
+{
+  "name": "David Jones - Software Developer Portfolio",
+  "short_name": "David Portfolio",
+  "description": "Professional Software Developer specializing in React, Node.js, and modern web solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#06b6d4",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

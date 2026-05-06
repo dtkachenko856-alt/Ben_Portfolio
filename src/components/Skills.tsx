@@ -42,16 +42,23 @@ export default function Skills() {
                     className="flex flex-col items-center gap-2 group cursor-pointer"
                   >
                     <motion.div 
-                      className="w-10 h-10 sm:w-12 sm:h-12 p-2 rounded-xl bg-white/5 transition-all relative overflow-hidden"
+                      className="w-10 h-10 sm:w-12 sm:h-12 p-2 rounded-xl bg-white/5 transition-all relative overflow-hidden group/skill"
                       whileHover={{ 
                         backgroundColor: 'rgba(6, 182, 212, 0.15)',
-                        boxShadow: '0 0 20px rgba(6, 182, 212, 0.3)'
+                        boxShadow: '0 0 30px rgba(6, 182, 212, 0.4)',
+                        scale: 1.05
                       }}
                     >
+                      {/* Lighting effect overlay */}
+                      <div className="absolute inset-0 opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-transparent to-blue-500/20"></div>
+                        <div className="absolute top-0 left-0 w-8 h-8 bg-cyan-500/30 rounded-full blur-xl -translate-x-1/2 -translate-y-1/2 group-hover/skill:translate-x-0 group-hover/skill:translate-y-0 transition-transform duration-500"></div>
+                        <div className="absolute bottom-0 right-0 w-8 h-8 bg-blue-500/30 rounded-full blur-xl translate-x-1/2 translate-y-1/2 group-hover/skill:translate-x-0 group-hover/skill:translate-y-0 transition-transform duration-500"></div>
+                      </div>
                       <img 
                         src={skill.icon} 
                         alt={skill.name} 
-                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" 
+                        className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 relative z-10" 
                       />
                     </motion.div>
                     <motion.span 
