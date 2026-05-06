@@ -57,8 +57,14 @@ export default function HumanVerification() {
     setError('')
     setSelectedImages(prev => {
       if (prev.includes(index)) {
+        // Deselect if already selected
         return prev.filter(i => i !== index)
       } else {
+        // Only allow selection if less than 4 items selected
+        if (prev.length >= 4) {
+          setError('Maximum 4 items can be selected')
+          return prev
+        }
         return [...prev, index]
       }
     })

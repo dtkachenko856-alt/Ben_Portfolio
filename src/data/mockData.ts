@@ -12,7 +12,7 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/yassine-dev', icon: 'Github' },
+  { name: 'GitHub', href: `https://github.com/${githubUsername}`, icon: 'Github' },
   { name: 'LinkedIn', href: 'https://linkedin.com/in/yassine-dev', icon: 'Linkedin' },
 ]
 
@@ -396,15 +396,15 @@ export const verificationData = {
   verificationSets: [
     {
       instruction: "Select all 4 images containing a computer to verify you're human",
-      correctImageIndices: [0, 2, 7, 8],
+      correctImageIndices: [0, 2, 4, 7],
       images: [
         { url: "/images/verification/computer1.jpg", alt: "Laptop computer" },
         { url: "/images/verification/store.jpg", alt: "Store interior" },
         { url: "/images/verification/computer2.jpg", alt: "Desktop computer" },
-        { url: "/images/verification/shoes.jpg", alt: "Fashion shoes" },
+        { url: "/images/verification/shoes.jpg", alt: "Forest trees" },
         { url: "/images/verification/computer3.jpg", alt: "Computer setup" },
         { url: "/images/verification/street.jpg", alt: "City street" },
-        { url: "/images/verification/coffee.jpg", alt: "Coffee shop" },
+        { url: "/images/verification/coffee.jpg", alt: "Ocean beach" },
         { url: "/images/verification/computer4.jpg", alt: "Coding on computer" },
         { url: "/images/verification/office.jpg", alt: "Office space" },
       ],
