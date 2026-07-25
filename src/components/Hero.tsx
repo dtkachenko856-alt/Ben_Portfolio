@@ -54,7 +54,7 @@ export default function Hero() {
             className="text-4xl lg:text-6xl font-bold mb-4 leading-tight"
           >
             Hi, I'm{' '}
-            <span className="text-cyan-400">David</span>
+            <span className="text-cyan-400">Ben Schnitzer</span>
           </motion.h1>
 
           {/* Profile Picture */}
@@ -69,7 +69,7 @@ export default function Hero() {
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src={heroData.avatar}
-                    alt="David Jones"
+                    alt="Ben Schnitzer"
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
@@ -86,7 +86,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl lg:text-2xl text-cyan-300 font-semibold mb-6"
           >
-            Software Developer 👋
+            AI Engineer & Software Developer
           </motion.p>
 
           {/* Description */}
@@ -159,7 +159,7 @@ export default function Hero() {
             </motion.a>
             
             <motion.a
-              href="mailto:davidjones@gmail.com"
+              href="mailto:benschnitzer787@gmail.com"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}

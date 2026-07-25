@@ -46,9 +46,9 @@ if (fs.existsSync(svgPath)) {
 
 // Create a manifest.json for PWA support
 const manifest = {
-  "name": "David Jones - Software Developer Portfolio",
-  "short_name": "David Portfolio",
-  "description": "Professional Software Developer specializing in React, Node.js, and modern web solutions",
+  "name": "Ben Schnitzer - AI Engineer & Software Developer",
+  "short_name": "Ben Schnitzer",
+  "description": "AI Engineer & Software Developer specializing in React, Node.js, and modern web solutions",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",

@@ -1,335 +1,437 @@
 // Global GitHub username - change this to update all GitHub references
-export const githubUsername = 'tattsedsharma'
+export const githubUsername = "";
 
 export const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'GitHub', href: '#github' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' },
-]
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
+  { name: "GitHub", href: "#github" },
+  { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
+  { name: "Contact", href: "#contact" },
+];
 
 export const socialLinks = [
-  { name: 'GitHub', href: `https://github.com/${githubUsername}`, icon: 'Github' },
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/yassine-dev', icon: 'Linkedin' },
-]
+  {
+    name: "GitHub",
+    href: `https://github.com/${githubUsername}`,
+    icon: "Github",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/ben-schnitzer-6098b3418/",
+    icon: "Linkedin",
+  },
+];
 
 export const heroData = {
-  name: 'David Jones',
-  tagline: 'Software Developer & Creative Problem Solver',
-  description: 'I specialize in building exceptional digital experiences with React, Node.js, TypeScript, and modern web technologies. Let\'s bring your ideas to life.',
-  availability: 'Available for freelance work',
-  avatar: '/images/avatar/about-avatar.jpg',
-  resumeUrl: 'https://example.com/yassine-resume.pdf',
+  name: "Ben Schnitzer",
+  tagline:
+    "Senior AI Engineer | AI Agent, RAG Systems, LangGraph, Open AI, Claude",
+  description:
+    "I build AI-powered applications using LLMs, AI agents, RAG, and modern web technologies. Let's create intelligent solutions that automate processes and deliver measurable results.",
+  availability: "Available for freelance work",
+  avatar: "/images/avatar/about-avatar.png",
+  resumeUrl:
+    "https://drive.google.com/file/d/1-Eg9EQNBwJEFq6e4oD8dI3VSsMfVmBMU/view?usp=drive_link",
   badges: [
-    { icon: 'Code2', label: 'Full Stack' },
-    { icon: 'Terminal', label: 'Clean Code' },
+    { icon: "Code2", label: "Full Stack" },
+    { icon: "Terminal", label: "Clean Code" },
   ],
-}
+};
 
 export const aboutData = {
-  title: 'David Jones',
-  avatar: '/images/avatar/about-avatar.jpg',
+  title: "Ben Schnitzer",
+  avatar: "/images/avatar/about-avatar.png",
   description: [
-    'I\'m David Jones, a software developer based in United State with a passion for building digital products that make a difference. With expertise spanning frontend, backend, mobile, and game development, I bring a versatile skill set to every project.',
-    'My journey in software development started with a curiosity for how things work, which evolved into a career creating solutions that help businesses grow and users thrive.',
+    "I'm a Senior AI Engineer specializing in building AI-powered applications, AI agents, and intelligent automation solutions that help businesses save time, improve workflows, and make better use of their data.",
+    "My experience includes designing and developing AI-powered SaaS platforms, agentic workflows, knowledge management systems, internal copilots, customer support assistants, and document processing solutions. I work across the full AI product lifecycle, from architecture and model selection to implementation, deployment, optimization, and long-term maintenance using technologies like OpenAI, Claude, LangGraph, LangChain, Python, FastAPI, React, Next.js, and AWS.",
   ],
   stats: [
-    { value: '5+', label: 'Years Experience' },
-    { value: '50+', label: 'Projects Completed' },
-    { value: '30+', label: 'Happy Clients' },
+    { value: "5+", label: "Years Experience" },
+    { value: "50+", label: "Projects Completed" },
+    { value: "30+", label: "Happy Clients" },
   ],
   services: [
     {
-      icon: 'Code2',
-      title: 'Web Development',
-      description: 'Building scalable web applications with React, Node.js, and modern frameworks.',
+      icon: "Bot",
+      title: "AI Agents & Multi-Agent Systems",
+      description:
+        "Building intelligent AI agents and multi-agent workflows using OpenAI, Claude, LangGraph, LangChain, MCP integrations, and tool calling.",
     },
     {
-      icon: 'Smartphone',
-      title: 'Mobile Apps',
-      description: 'Cross-platform mobile applications using React Native for iOS and Android.',
+      icon: "Database",
+      title: "RAG & Knowledge Systems",
+      description:
+        "Developing Retrieval-Augmented Generation systems with vector databases, embeddings, semantic search, and private business knowledge bases.",
     },
     {
-      icon: 'Gamepad2',
-      title: 'Game Development',
-      description: 'Creating engaging 2D and 3D games with Unity and C#.',
+      icon: "Workflow",
+      title: "AI Automation",
+      description:
+        "Creating AI-powered automation solutions that connect workflows, APIs, CRMs, and business systems to reduce repetitive tasks.",
     },
     {
-      icon: 'Database',
-      title: 'Backend Systems',
-      description: 'Robust APIs and database solutions with PostgreSQL, MongoDB, and GraphQL.',
+      icon: "Code2",
+      title: "Full-Stack AI Development",
+      description:
+        "Building scalable AI applications using Python, FastAPI, React, Next.js, Node.js, PostgreSQL, Supabase, and AWS.",
     },
   ],
-}
+};
 
 export const educationData = {
-  title: 'Education',
+  title: "Education",
   education: [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University of Technology',
-      location: 'San Francisco, CA',
-      period: '2018 - 2022',
-      gpa: '3.8/4.0',
+      degree: "Bachelor Degree Computer Science",
+      school: "Aix-Marseille University",
+      location: "Marseille",
+      period: "4 years",
       achievements: [
-        'Dean\'s List for 6 semesters',
-        'President of Computer Science Club',
-        'Published research paper on Machine Learning'
-      ]
+        "Studied computer science fundamentals, software engineering, and artificial intelligence.",
+        "Developed strong foundations in programming, algorithms, databases, and modern software development.",
+        "Focused on machine learning, AI technologies, and building scalable software solutions.",
+      ],
     },
-    {
-      degree: 'Full Stack Web Development Bootcamp',
-      school: 'Tech Academy',
-      location: 'Online',
-      period: '2022',
-      achievements: [
-        'Completed intensive 24-week program',
-        'Built 5 full-stack applications',
-        'Specialized in React and Node.js'
-      ]
-    }
   ],
-  certifications: [
-    {
-      name: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      date: '2023',
-      credentialId: 'AWS-ASA-123456'
-    },
-    {
-      name: 'Google Cloud Professional Developer',
-      issuer: 'Google Cloud',
-      date: '2023',
-      credentialId: 'GCP-PD-789012'
-    },
-    {
-      name: 'Meta React Developer Certificate',
-      issuer: 'Meta',
-      date: '2022',
-      credentialId: 'META-RD-345678'
-    }
-  ]
-}
+  certifications: [],
+};
 
 export const navbarData = {
   logo: {
-    text: 'DJ',
-    fullText: 'David Jones'
+    text: "BS",
+    fullText: "Ben Schnitzer",
   },
   navigation: [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Education', href: '#education' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'GitHub', href: '#github' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' }
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Education", href: "#education" },
+    { name: "Experience", href: "#experience" },
+    { name: "GitHub", href: "#github" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
   ],
   ctaButton: {
     text: "Let's Talk",
-    href: '#contact'
-  }
-}
+    href: "#contact",
+  },
+};
 
 export const experienceData = [
   {
-    title: 'Senior Software Developer',
-    company: 'Freelance',
-    period: '2022 - Present',
+    title: "Senior AI Engineer",
+    company: "Capgemini",
+    period: "September 2024 - April 2026",
     description: [
-      'Leading full-stack development projects for international clients',
-      'Specializing in React, Node.js, and cloud solutions',
-      'Architecting scalable applications with modern best practices',
+      "Designed and deployed enterprise-grade AI SaaS platforms using Large Language Models including OpenAI and Claude.",
+      "Built multi-agent systems and AI orchestration pipelines using LangGraph and LangChain.",
+      "Architected RAG systems for enterprise knowledge bases, internal copilots, and intelligent assistants.",
+      "Integrated AI solutions with CRM, ERP, APIs, and enterprise data platforms.",
+      "Led production deployment, scalability improvements, monitoring, and AI cost optimization.",
     ],
-    skills: ['React', 'Node.js', 'TypeScript', 'AWS', 'PostgreSQL'],
+    skills: [
+      "OpenAI",
+      "Claude",
+      "LangGraph",
+      "LangChain",
+      "RAG",
+      "Python",
+      "FastAPI",
+      "AWS",
+    ],
   },
+
   {
-    title: 'Full Stack Developer',
-    company: 'Tech Startup',
-    period: '2020 - 2022',
+    title: "AI Engineer",
+    company: "Atos",
+    period: "January 2023 - September 2024",
     description: [
-      'Developed and maintained web applications serving 100K+ users',
-      'Implemented CI/CD pipelines and microservices architecture',
-      'Optimized database queries reducing load times by 40%',
+      "Developed AI chatbots, internal copilots, and automation systems for enterprise clients.",
+      "Built Retrieval-Augmented Generation pipelines using vector databases and semantic search.",
+      "Implemented prompt engineering, tool calling, and LLM workflow automation.",
+      "Integrated OpenAI APIs into enterprise software ecosystems.",
+      "Delivered document intelligence and AI-powered knowledge retrieval solutions.",
     ],
-    skills: ['React', 'Express', 'MongoDB', 'Docker', 'GraphQL'],
+    skills: [
+      "AI Agents",
+      "RAG",
+      "LLMs",
+      "OpenAI API",
+      "Vector Databases",
+      "NLP",
+      "Automation",
+    ],
   },
+
   {
-    title: 'Mobile App Developer',
-    company: 'Digital Agency',
-    period: '2019 - 2020',
+    title: "Full Stack AI Developer",
+    company: "Sopra Steria",
+    period: "July 2022 - December 2022",
     description: [
-      'Built cross-platform mobile applications using React Native',
-      'Delivered 10+ apps to the App Store and Google Play',
-      'Integrated third-party APIs and payment gateways',
+      "Built AI-powered SaaS applications using OpenAI APIs and modern web technologies.",
+      "Developed full-stack applications with React, Next.js, Node.js, and PostgreSQL.",
+      "Implemented authentication systems, dashboards, and third-party API integrations.",
+      "Deployed scalable applications using AWS and Vercel.",
+      "Developed early AI automation workflows and LLM-based solutions.",
     ],
-    skills: ['React Native', 'iOS', 'Android', 'Firebase', 'Redux'],
+    skills: ["React", "Next.js", "Node.js", "PostgreSQL", "AWS", "OpenAI"],
   },
-  {
-    title: 'Junior Developer',
-    company: 'Software Company',
-    period: '2018 - 2019',
-    description: [
-      'Started professional journey developing web applications',
-      'Learned modern development practices and agile methodologies',
-      'Collaborated with senior developers on production code',
-    ],
-    skills: ['JavaScript', 'PHP', 'MySQL', 'HTML/CSS', 'Git'],
-  },
-]
+];
 
 export const projectsData = [
   {
-    title: 'Shopify E-Commerce Store',
-    description: 'Full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.',
-    image: 'https://picsum.photos/800/600?random=shop1',
-    tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    demoUrl: 'https://shopify-demo.vercel.app',
-    githubUrl: 'https://github.com/yassine-dev/shopify-store',
+    title: "AI Children’s Storytelling Platform",
+    description:
+      "AI-powered storytelling platform that creates personalized children’s stories, generates custom illustrations, and delivers engaging voice-narrated experiences.",
+    image: "https://l9kudpijgzio1vvu.public.blob.vercel-storage.com/pro1.png",
+    tags: ["LangChain", "OpenAI", "RAG", "Next.js", "Python", "FastAPI", "AWS"],
+    demoUrl: "https://app.talemint.com/",
+    githubUrl: "#",
     featured: true,
   },
   {
-    title: 'Fashion Online Store',
-    description: 'Modern fashion e-commerce platform with product filtering, cart management, and checkout.',
-    image: 'https://picsum.photos/800/600?random=fashion1',
-    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Stripe'],
-    demoUrl: '',
-    githubUrl: 'https://github.com/yassine-dev/fashion-store',
+    title: "AI Lead Qualification & CRM Automation",
+    description:
+      "AI-powered sales automation system that captures incoming leads, analyzes customer intent, scores opportunities, updates CRM records, and automatically schedules qualified meetings.",
+    image:
+      "https://l9kudpijgzio1vvu.public.blob.vercel-storage.com/Ben/pro2.jpg",
+    tags: [
+      "n8n",
+      "OpenAI",
+      "HubSpot",
+      "CRM",
+      "Google Calendar",
+      "Gmail APIs",
+      "Slack",
+    ],
+    demoUrl: "#",
+    githubUrl: "#",
     featured: true,
   },
   {
-    title: 'Electronics Marketplace',
-    description: 'Multi-vendor electronics store with product comparisons and reviews system.',
-    image: 'https://picsum.photos/800/600?random=electronics1',
-    tags: ['React', 'GraphQL', 'MongoDB', 'Redis'],
-    demoUrl: '#',
-    githubUrl: '#',
+    title: "Calling Bees",
+    description:
+      "AI voice calling platform that lets businesses deploy AI phone agents for inbound and outbound calls, automate lead qualification, book meetings, connect CRM and calendars, and analyze conversations with transcripts and sentiment insights.",
+    image:
+      "https://l9kudpijgzio1vvu.public.blob.vercel-storage.com/Ben/pro3.jpg", // Replace with a screenshot if preferred
+    tags: [
+      "Voice AI",
+      "LLM",
+      "Speech-to-Text",
+      "Text-to-Speech",
+      "CRM",
+      "Calendars",
+      "Twilio",
+      "AI Agents",
+    ],
+    demoUrl: "https://callingbees.com/",
+    githubUrl: "#",
     featured: false,
   },
   {
-    title: 'Organic Food Store',
-    description: 'Fresh produce delivery platform with subscription boxes and local vendor integration.',
-    image: 'https://picsum.photos/800/600?random=organic1',
-    tags: ['React', 'Node.js', 'MongoDB', 'AWS'],
-    demoUrl: '#',
-    githubUrl: '#',
+    title: "DropBot AI Chatbot Platform",
+    description:
+      "AI-powered website chatbot platform that helps businesses automate customer conversations, answer questions instantly, capture leads, and provide 24/7 support using custom-trained AI agents.",
+    image:
+      "https://l9kudpijgzio1vvu.public.blob.vercel-storage.com/Ben/pro4.jpg",
+    tags: [
+      "AI Chatbot",
+      "OpenAI",
+      "RAG",
+      "LLM",
+      "Knowledge Base",
+      "Next.js",
+      "TypeScript",
+      "SaaS",
+    ],
+    demoUrl: "https://dropbot.me/",
+    githubUrl: "#",
     featured: false,
   },
   {
-    title: 'Jewelry Boutique',
-    description: 'Luxury jewelry e-commerce with 360° product view and custom engraving options.',
-    image: 'https://picsum.photos/800/600?random=jewelry1',
-    tags: ['React', 'Three.js', 'Node.js', 'WebGL'],
-    demoUrl: '#',
-    githubUrl: '#',
+    title: "AI Course Generation & Presentation Automation Platform",
+    description:
+      "AI-powered learning platform that transforms documents, PDFs, and knowledge bases into structured courses with automated lesson plans, modules, and presentation slides. Built with RAG and LLM workflows, the system enables administrators to generate, review, and publish scalable educational content through an intelligent web-based platform.",
+    image:
+      "https://l9kudpijgzio1vvu.public.blob.vercel-storage.com/Ben/pro5.jpg",
+    tags: [
+      "AI Engineer",
+      "RAG",
+      "OpenAI",
+      "LangChain",
+      "LLM",
+      "Next.js",
+      "Python",
+      "FastAPI",
+      "AWS",
+    ],
+    demoUrl: "https://iamglobalalliance.com/",
+    githubUrl: "#",
     featured: false,
   },
   {
-    title: 'Home Decor Store',
-    description: 'Interior design marketplace with AR room preview and style recommendations.',
-    image: 'https://picsum.photos/800/600?random=homedecor1',
-    tags: ['React', 'AR.js', 'Python', 'FastAPI'],
-    demoUrl: '#',
-    githubUrl: '#',
+    title: "AI Weather Report Automation Workflow",
+    description:
+      "AI-powered automation workflow that generates personalized weather reports using real-time weather APIs and LLM agents. Built with n8n, LangChain, and OpenAI, the system understands user requests, retrieves live weather data, creates AI-generated summaries, and automatically delivers reports through email.",
+    image: "https://l9kudpijgzio1vvu.public.blob.vercel-storage.com/Ben/pro6.jpg",
+    tags: ["n8n","OpenAI","LangChain","AI Agents","GPT-4","API Integration","Gmail Automation","Workflow Automation"],
+    demoUrl: "#",
+    githubUrl: "#",
     featured: false,
   },
-  {
-    title: 'Sports Equipment Shop',
-    description: 'Athletic gear e-commerce with size guides, inventory tracking, and team discounts.',
-    image: 'https://picsum.photos/800/600?random=sports1',
-    tags: ['React', 'Node.js', 'MySQL', 'Redis'],
-    demoUrl: '#',
-    githubUrl: '#',
-    featured: false,
-  },
-  {
-    title: 'Book Store Platform',
-    description: 'Online bookstore with reading lists, reviews, and personalized recommendations.',
-    image: 'https://picsum.photos/800/600?random=books1',
-    tags: ['Next.js', 'Prisma', 'PostgreSQL', 'AI'],
-    demoUrl: '#',
-    githubUrl: '#',
-    featured: false,
-  },
-  {
-    title: 'Pet Supplies Store',
-    description: 'Pet products marketplace with auto-replenishment and veterinary partnerships.',
-    image: 'https://picsum.photos/800/600?random=pets1',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    demoUrl: '#',
-    githubUrl: '#',
-    featured: false,
-  },
-  {
-    title: 'Cosmetics Boutique',
-    description: 'Beauty products store with virtual try-on and skin type recommendations.',
-    image: 'https://picsum.photos/800/600?random=cosmetics1',
-    tags: ['React', 'WebRTC', 'Python', 'ML'],
-    demoUrl: '#',
-    githubUrl: '#',
-    featured: false,
-  },
-]
+];
 
 export const skillsData = {
   categories: [
     {
-      title: 'Frontend Development',
+      title: "AI Engineering",
       skills: [
-        { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-        { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-        { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-        { name: 'Tailwind CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
-        { name: 'Framer Motion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg' },
+        {
+          name: "OpenAI API",
+          icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg",
+        },
+        {
+          name: "Claude",
+          icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/anthropic.svg",
+        },
+        {
+          name: "LangChain",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        },
+        {
+          name: "LangGraph",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        },
+        {
+          name: "RAG Systems",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg",
+        },
       ],
     },
+
     {
-      title: 'Backend Development',
+      title: "Backend & AI Infrastructure",
       skills: [
-        { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-        { name: 'Express', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
-        { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-        { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
-        { name: 'GraphQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg' },
+        {
+          name: "Python",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        },
+        {
+          name: "FastAPI",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+        },
+        {
+          name: "Node.js",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        },
+        {
+          name: "PostgreSQL",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        },
+        {
+          name: "Supabase",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        },
       ],
     },
+
     {
-      title: 'Mobile & Game Dev',
+      title: "Frontend Development",
       skills: [
-        { name: 'React Native', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-        { name: 'Unity', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg' },
-        { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
-        { name: 'iOS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg' },
-        { name: 'Android', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg' },
+        {
+          name: "React",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+          name: "Next.js",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        },
+        {
+          name: "TypeScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        },
+        {
+          name: "JavaScript",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
       ],
     },
+
     {
-      title: 'Tools & DevOps',
+      title: "Cloud & DevOps",
       skills: [
-        { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-        { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-        { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg' },
-        { name: 'CI/CD', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg' },
-        { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg' },
+        {
+          name: "AWS",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        },
+        {
+          name: "Docker",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        },
+        {
+          name: "CI/CD",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg",
+        },
+        {
+          name: "Linux",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+        },
+        {
+          name: "Git",
+          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
       ],
     },
   ],
+
   additionalTechnologies: [
-    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-    { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-    { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
-    { name: 'Go', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg' },
-    { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg' },
-    { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
-    { name: 'Vite', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' },
-    { name: 'Kubernetes', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg' },
-    { name: 'Jest', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg' },
-    { name: 'Storybook', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg' },
+    {
+      name: "LangChain",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+    {
+      name: "LangGraph",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+    {
+      name: "VectorDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg",
+    },
+    {
+      name: "MCP Integrations",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "NLP",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+    {
+      name: "Machine Learning",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    },
+    {
+      name: "Redis",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+    },
+    {
+      name: "Vercel",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+    },
+    {
+      name: "n8n",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "Make.com",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
   ],
-}
+};
 
 export const githubData = {
   username: githubUsername,
@@ -344,58 +446,86 @@ export const githubData = {
     followers: 89,
     following: 34,
   },
-}
+};
 
 export const contactData = {
-  email: 'davidjones@gmail.com',
-  phone: '+112 6XX XXX XXX',
-  location: 'United State',
+  email: "benschnitzer787@gmail.com",
+  phone: "+xxx xxx xxx xxxx",
+  location: "France",
   contactInfo: [
-    { icon: 'Mail', label: 'Email', value: 'davidjones@gmail.com', href: 'mailto:davidjones@gmail.com' },
-    { icon: 'Phone', label: 'Phone', value: '+112 6XX XXX XXX', href: 'tel:+112600000000' },
-    { icon: 'MapPin', label: 'Location', value: 'United State', href: '#' },
+    {
+      icon: "Mail",
+      label: "Email",
+      value: "benschnitzer787@gmail.com",
+      href: "mailto:benschnitzer787@gmail.com",
+    },
+    { icon: "MapPin", label: "Location", value: "France", href: "#" },
   ],
-}
+};
 
 export const footerData = {
-  name: 'David Jones',
+  name: "Ben Schnitzer",
   year: new Date().getFullYear(),
-}
+};
 
 export const chatbotData = {
-  welcomeMessage: "👋 Hi! I'm David's AI assistant. Ask me anything about his work, skills, or how to get in touch!",
-  botName: "David's Assistant",
+  welcomeMessage:
+    "👋 Hi! I'm Ben's AI assistant. Ask me anything about his AI expertise, projects, experience, or how to get in touch!",
+  botName: "Ben's Assistant",
   botResponses: {
-    'hello': 'Hi there! 👋 Welcome to my portfolio. How can I help you today?',
-    'hi': 'Hello! 👋 I\'m David\'s virtual assistant. Ask me about his skills, projects, or experience!',
-    'hey': 'Hey! 👋 What would you like to know about David?',
-    'skills': `David is skilled in React, TypeScript, Node.js, Next.js, Tailwind CSS, and more. Check out the Skills section for details! 💻`,
-    'experience': `David has 5+ years of experience as a Software Developer, working with startups and international clients. 🚀`,
-    'projects': `David has built many projects including E-commerce stores, Mobile apps, and Web applications. Check the Projects section! 🛠️`,
-    'contact': `You can reach David via email at ${contactData.email} or through the contact form on this page. 📧`,
-    'email': `David's email is ${contactData.email}. Feel free to reach out! 📧`,
-    'hire': 'David is available for freelance work and full-time opportunities. Contact him to discuss your project! 💼',
-    'resume': 'You can download David\'s resume from the Download Resume button in the hero section! 📄',
-    'about': `David is a Software Developer based in ${contactData.location}, passionate about building digital products that make a difference. 🌍`,
-    'github': `You can check out David's GitHub profile at https://github.com/${githubUsername} for his latest projects and contributions! 🐙`,
-    'linkedin': `Connect with David on LinkedIn: https://linkedin.com/in/yassine-dev for professional networking! 💼`,
-    'location': `David is based in ${contactData.location} and available for remote work worldwide! 🌍`,
-    'availability': heroData.availability,
-    'default': 'I\'m not sure about that. Try asking about skills, experience, projects, or how to contact David! 🤔',
+    hello:
+      "Hi there! 👋 Welcome to Ben's AI portfolio. How can I help you today?",
+    hi: "Hello! 👋 I'm Ben's virtual assistant. Ask me about his AI skills, projects, experience, or services!",
+    hey: "Hey! 👋 What would you like to know about Ben?",
+
+    skills: `Ben specializes in AI Engineering, AI Agents, Multi-Agent Systems, Large Language Models (LLMs), OpenAI, Anthropic Claude, LangChain, LangGraph, RAG systems, MCP integrations, Python, FastAPI, React, Next.js, and cloud technologies. 🤖`,
+
+    experience: `Ben is a Senior AI Engineer with experience building production-ready AI solutions, enterprise copilots, RAG platforms, AI automation systems, and intelligent SaaS applications for businesses. 🚀`,
+
+    projects: `Ben has built AI-powered platforms including personalized children's story generation systems, AI course creator platforms using RAG and LLMs, document intelligence solutions, and automation workflows. Check out the Projects section! 🛠️`,
+
+    contact: `You can reach Ben via email at ${contactData.email} or through the contact form on this page. 📧`,
+
+    email: `Ben's email is ${contactData.email}. Feel free to reach out for AI projects, consulting, or collaboration opportunities! 📧`,
+
+    hire: "Ben is available for AI engineering projects, consulting, freelance work, and full-time opportunities. Contact him to discuss your AI solution! 💼",
+
+    resume:
+      "You can download Ben's resume from the Download Resume button in the hero section! 📄",
+
+    about: `Ben is a Senior AI Engineer based in Marseille, France, specializing in building scalable AI applications, intelligent automation systems, and LLM-powered products. 🌍`,
+
+    github: `You can check out Ben's GitHub profile for his latest AI projects and engineering work! 🐙`,
+
+    linkedin: `Connect with Ben on LinkedIn for professional networking and AI engineering opportunities! 💼`,
+
+    location: `Ben is based in Marseille, France and available for remote AI engineering projects worldwide! 🌍`,
+
+    availability:
+      "Ben is available for AI development projects, consulting, and opportunities involving LLM applications, AI agents, RAG systems, and automation solutions.",
+
+    "ai agents": `Ben builds AI agent systems using OpenAI, Claude, LangGraph, and LangChain to automate workflows, connect business data, and create intelligent applications. 🤖`,
+
+    rag: `Ben develops Retrieval-Augmented Generation (RAG) systems using vector databases, embeddings, semantic search, and private knowledge sources to create intelligent AI assistants. 📚`,
+
+    default:
+      "I'm not sure about that. Try asking about Ben's skills, AI experience, projects, availability, or contact information! 🤔",
   },
+
   quickReplies: [
-    'Tell me about your skills',
-    'View your projects', 
-    'How to contact you?',
-    'Are you available for hire?',
+    "Tell me about your AI skills",
+    "View your AI projects",
+    "How to contact you?",
+    "Are you available for AI work?",
   ],
-}
+};
 
 export const verificationData = {
   // Multiple verification sets for daily rotation
   verificationSets: [
     {
-      instruction: "Select all 4 images containing a computer to verify you're human",
+      instruction:
+        "Select all 4 images containing a computer to verify you're human",
       correctImageIndices: [0, 2, 4, 7],
       images: [
         { url: "/images/verification/computer1.jpg", alt: "Laptop computer" },
@@ -405,12 +535,16 @@ export const verificationData = {
         { url: "/images/verification/computer3.jpg", alt: "Computer setup" },
         { url: "/images/verification/street.jpg", alt: "City street" },
         { url: "/images/verification/coffee.jpg", alt: "Ocean beach" },
-        { url: "/images/verification/computer4.jpg", alt: "Coding on computer" },
+        {
+          url: "/images/verification/computer4.jpg",
+          alt: "Coding on computer",
+        },
         { url: "/images/verification/office.jpg", alt: "Office space" },
       ],
     },
     {
-      instruction: "Select all 4 images containing a car to verify you're human",
+      instruction:
+        "Select all 4 images containing a car to verify you're human",
       correctImageIndices: [1, 3, 5, 8],
       images: [
         { url: "/images/verification/store.jpg", alt: "Store interior" },
@@ -425,7 +559,8 @@ export const verificationData = {
       ],
     },
     {
-      instruction: "Select all 4 images containing a tree to verify you're human",
+      instruction:
+        "Select all 4 images containing a tree to verify you're human",
       correctImageIndices: [0, 4, 6, 7],
       images: [
         { url: "/images/verification/tree1.jpg", alt: "Forest trees" },
@@ -440,7 +575,8 @@ export const verificationData = {
       ],
     },
     {
-      instruction: "Select all 4 images containing a beach to verify you're human",
+      instruction:
+        "Select all 4 images containing a beach to verify you're human",
       correctImageIndices: [2, 5, 7, 8],
       images: [
         { url: "/images/verification/tree1.jpg", alt: "Forest trees" },
@@ -455,7 +591,8 @@ export const verificationData = {
       ],
     },
     {
-      instruction: "Select all 4 images containing a building to verify you're human",
+      instruction:
+        "Select all 4 images containing a building to verify you're human",
       correctImageIndices: [1, 3, 5, 6],
       images: [
         { url: "/images/verification/tree1.jpg", alt: "Forest trees" },
@@ -470,18 +607,21 @@ export const verificationData = {
       ],
     },
   ],
-  
+
   // Function to get today's verification set
-  getDailyVerification: function() {
-    const today = new Date()
-    const dayOfYear = Math.floor((today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) / 86400000)
-    const setIndex = dayOfYear % this.verificationSets.length
-    return this.verificationSets[setIndex]
+  getDailyVerification: function () {
+    const today = new Date();
+    const dayOfYear = Math.floor(
+      (today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) /
+        86400000,
+    );
+    const setIndex = dayOfYear % this.verificationSets.length;
+    return this.verificationSets[setIndex];
   },
-  
+
   // Function to get verification key for today (for validation)
-  getDailyKey: function() {
-    const today = new Date()
-    return today.toISOString().split('T')[0] // YYYY-MM-DD format
+  getDailyKey: function () {
+    const today = new Date();
+    return today.toISOString().split("T")[0]; // YYYY-MM-DD format
   },
-}
+};

@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
-import { Code2, Smartphone, Gamepad2, Database } from 'lucide-react'
+import { Code2, Bot, Database, Workflow } from 'lucide-react'
 import { aboutData } from '../data/mockData'
 
-const iconMap = { Code2, Smartphone, Gamepad2, Database }
+const iconMap = { Code2, Bot, Database, Workflow }
 
 export default function About() {
   return (

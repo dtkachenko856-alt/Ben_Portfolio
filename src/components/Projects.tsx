@@ -135,7 +135,7 @@ export default function Projects() {
                 </h3>
                 <p className="text-gray-400 text-sm mb-4 flex-grow">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.slice(0, 3).map((tag) => (
+                  {project.tags.slice(0, 5).map((tag) => (
                     <span
                       key={tag}
                       className="px-2 py-1 text-xs bg-white/5 text-gray-300 rounded-full"

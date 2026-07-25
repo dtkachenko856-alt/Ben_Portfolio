@@ -29,7 +29,7 @@ export default function Navbar() {
             className="text-lg md:text-xl font-bold text-cyan-400"
             whileHover={{ scale: 1.05 }}
           >
-            DJ
+            Ben
           </motion.a>
 
           <div className="hidden md:flex items-center space-x-8">

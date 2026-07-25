@@ -84,10 +84,10 @@ export default function Education() {
                         <MapPin size={16} />
                         <span>{edu.location}</span>
                       </div>
-                      {edu.gpa && (
+                      {(edu as { gpa?: string }).gpa && (
                         <div className="flex items-center gap-2">
                           <Star size={16} />
-                          <span>{edu.gpa}</span>
+                          <span>{(edu as { gpa?: string }).gpa}</span>
                         </div>
                       )}
                     </div>
@@ -131,7 +131,7 @@ export default function Education() {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {educationData.certifications.map((cert, index) => (
+              {educationData.certifications.map((cert: { name: string; issuer: string; date: string; credentialId: string }, index: number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}

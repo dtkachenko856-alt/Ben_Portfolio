@@ -275,7 +275,6 @@ export default function GitHub() {
                 ))}
               </div>
               <a
-                href={`https://github.com/${userData?.login || githubUsername}?tab=repositories`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-center mt-4 text-sm text-cyan-400 hover:text-cyan-300 transition-colors"

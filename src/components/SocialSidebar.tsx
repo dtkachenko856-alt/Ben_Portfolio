@@ -4,8 +4,8 @@ import { githubUsername } from '../data/mockData'
 
 const socialLinks = [
   { icon: Github, href: `https://github.com/${githubUsername}`, label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com/in/yassine-dev', label: 'LinkedIn' },
-  { icon: Mail, href: 'mailto:yassine@example.com', label: 'Email' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/ben-schnitzer-6098b3418', label: 'LinkedIn' },
+  { icon: Mail, href: 'mailto:benschnitzer787@gmail.com', label: 'Email' },
 ]
 
 export default function SocialSidebar() {
