@@ -72,53 +72,6 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="glass-effect p-6 md:p-8 rounded-2xl"
-        >
-          <h3 className="text-xl font-semibold mb-6 text-center">Additional Technologies</h3>
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
-            {skillsData.additionalTechnologies.map((tech, index) => (
-              <motion.div
-                key={tech.name}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.25, delay: index * 0.05, type: 'spring', stiffness: 280 }}
-                whileHover={{ 
-                  y: -6, 
-                  scale: 1.08,
-                  transition: { type: 'spring', stiffness: 400, damping: 15 }
-                }}
-                whileTap={{ scale: 0.95 }}
-                className="flex flex-col items-center gap-2 group cursor-pointer"
-              >
-                <motion.div 
-                  className="w-8 h-8 sm:w-10 sm:h-10 p-1.5 rounded-lg bg-white/5 transition-all relative"
-                  whileHover={{ 
-                    backgroundColor: 'rgba(6, 182, 212, 0.15)',
-                    boxShadow: '0 0 15px rgba(6, 182, 212, 0.25)'
-                  }}
-                >
-                  <img 
-                    src={tech.icon} 
-                    alt={tech.name} 
-                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110" 
-                  />
-                </motion.div>
-                <motion.span 
-                  className="text-xs text-gray-400 transition-colors group-hover:text-cyan-400"
-                >
-                  {tech.name}
-                </motion.span>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   )
